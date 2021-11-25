@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.srjc.a10.inwoo.lee.java.FXMLDocumentController">
+    <children>
+        <LineChart fx:id="lineChart" layoutX="105.0" layoutY="55.0" prefHeight="543.0" prefWidth="710.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <xAxis>
+                <CategoryAxis label="Dates" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+      <Button fx:id="buttonJan" layoutX="20" layoutY="680" mnemonicParsing="false" onAction="#janClick" prefHeight="20" prefWidth="80" text="January" />
+      <Button fx:id="buttonFeb" layoutX="115.0" layoutY="680.0" mnemonicParsing="false" onAction="#febClick" prefHeight="20" prefWidth="80" text="February" />
+      <Button fx:id="buttonAll" layoutX="210.0" layoutY="680.0" mnemonicParsing="false" onAction="#allClick" prefHeight="20" prefWidth="80" text="All" />
+    </children>
+</AnchorPane>

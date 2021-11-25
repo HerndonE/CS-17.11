@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="909.0" style="-fx-background-color: teal;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.srjc.Ethan.Herndon.Media.Player.Controller">
+    <center>
+        <MediaView fx:id="mediaView" fitHeight="600.0" fitWidth="700.0" BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>

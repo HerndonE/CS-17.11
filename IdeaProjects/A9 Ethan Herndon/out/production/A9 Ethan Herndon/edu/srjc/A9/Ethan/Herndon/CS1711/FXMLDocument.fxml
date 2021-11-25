@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane id="AnchorPane" prefHeight="401.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.srjc.A9.Ethan.Herndon.CS1711.UiController">
+    <children>
+        <TableView fx:id="tblData" layoutX="78.0" layoutY="37.0" prefHeight="401.0" prefWidth="583.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columns>
+                <TableColumn fx:id="colDate" prefWidth="261.0" text="Date">
+                    <cellValueFactory><PropertyValueFactory property="date" /></cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="colUsage" prefWidth="261.0" text="Usage">
+                    <cellValueFactory><PropertyValueFactory property="usage" /></cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

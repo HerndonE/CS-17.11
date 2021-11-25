@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="401.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.srjc.beanie.ui.UiController">
+   <children>
+      <TableView fx:id="tblPeople" layoutX="78.0" layoutY="37.0" prefHeight="401.0" prefWidth="583.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="75.0" text="Name">
+             <cellValueFactory><PropertyValueFactory property="name" /></cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="colAddress" prefWidth="200.0" text="Address">
+             <cellValueFactory><PropertyValueFactory property="address" /></cellValueFactory>
+          </TableColumn>
+            <TableColumn fx:id="colCity" prefWidth="100.0" text="City">
+               <cellValueFactory><PropertyValueFactory property="city" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colState" prefWidth="75.0" text="State">
+               <cellValueFactory><PropertyValueFactory property="state" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colZip" minWidth="-Infinity" prefWidth="75.0" text="Zip">
+               <cellValueFactory><PropertyValueFactory property="zip" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colName1" prefWidth="75.0" text="Name">
+               <cellValueFactory>
+                  <PropertyValueFactory property="name" />
+               </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

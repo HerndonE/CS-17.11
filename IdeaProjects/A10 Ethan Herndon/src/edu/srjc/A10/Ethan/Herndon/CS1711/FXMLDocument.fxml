@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.srjc.A10.Ethan.Herndon.CS1711.UIController">
+    <children>
+        <LineChart fx:id="bpChart" layoutX="105.0" layoutY="55.0" prefHeight="543.0" prefWidth="710.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </LineChart>
+      <Button fx:id="janButton" layoutX="14.0" layoutY="550.0" mnemonicParsing="false" onAction="#janClick" text="January" />
+      <Button fx:id="febButton" layoutX="113.0" layoutY="550.0" mnemonicParsing="false" onAction="#febClick" text="February" />
+    </children>
+</AnchorPane>
